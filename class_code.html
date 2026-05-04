@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and form </title>
+    <style>
+        table td {
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        table th {
+            border: 2px solid black;
+            padding: 5px;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .ulist {
+            margin-left: 200px;
+        }
+
+        .ulist p {
+            font-size: 20px;
+        }
+
+        .olist {
+            margin-left: 200px;
+        }
+
+        .olist p {
+            font-size: 20px;
+        }
+
+        .list {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 300px;
+        }
+        .form{
+            border: 2px solid black;
+            padding: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Google</th>
+                <th>Youtube</th>
+                <th>Instagram</th>
+            </tr>
+            <tr>
+                <td>Google is a leading multinational technology company founded in 1998 by Larry Page and Sergey Brin.
+                    It began as a search engine and has grown into one of the world’s largest tech giants. Google
+                    provides products and services such as Gmail, YouTube, Google Maps, Chrome, Android, and Google
+                    Drive. Its parent company, Alphabet Inc., was created in 2015. Google is also a pioneer in
+                    artificial intelligence, cloud computing, and digital advertising. With its mission “to organize the
+                    world’s information and make it universally accessible and useful,” Google has become an essential
+                    part of daily life worldwide.</td>
+                <td>YouTube is the world’s largest online video-sharing platform, launched in 2005 by Steve Chen, Chad
+                    Hurley, and Jawed Karim. In 2006, it was acquired by Google. The platform allows users to upload,
+                    watch, share, and comment on videos across a wide range of topics such as education, entertainment,
+                    news, music, gaming, and more. YouTube supports live streaming and monetization through ads,
+                    memberships, and super chats, making it a major source of income for creators. With billions of
+                    users worldwide, YouTube has become a global hub for learning, creativity, and entertainment,
+                    shaping modern digital culture significantly.</td>
+                <td>Instagram is a popular social media platform launched in 2010 by Kevin Systrom and Mike Krieger. It
+                    was later acquired by Facebook (now Meta) in 2012. The app allows users to share photos, videos, and
+                    stories with followers, using filters and creative tools. Features like reels, live streaming, and
+                    direct messaging make it highly interactive. Instagram is also widely used by businesses and
+                    influencers for brand promotion, advertising, and connecting with audiences. With over a billion
+                    active users worldwide, Instagram has become a powerful platform for self-expression, communication,
+                    entertainment, and digital marketing in today’s social media-driven world.</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="list">
+        <div class="ulist">
+            <p>Operating Systems:</p>
+            <ul>
+                <li>Google Chrome</li>
+                <li>Mozilla Firefox</li>
+                <li>Opera Mini</li>
+            </ul>
+        </div>
+        <div class="olist">
+            <p>Anti-Viruses:</p>
+            <ol type="A">
+                <li>Norton Antivirus</li>
+                <li>MacAfee Antivirus</li>
+                <li>Kaspersky Antivirus</li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <h2>Registration Form</h2>
+        <form action="none" class="form">
+            <label for="name">Enter your Name :</label>
+            <input type="text" id="name"> <br> <br>
+            <label for="college">Enter your College :</label>
+            <input type="text"> <br> <br>
+            <label for="email">Enter your E-mail :</label>
+            <input type="email"> <br> <br>
+            <label for="lang">Select one lang :</label>
+            <input type="radio" name="lang">English
+            <input type="radio" name="lang">Hindi <br> <br>
+            <label for="Comp lang">Computer Language :</label>
+            <select name="complang" id="">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="C">C/C++</option>
+            </select> <br> <br>
+            <label for="comm">Comments :</label>
+            <textarea name="comments" id="comm" rows="10px" cols="50px"></textarea>
+        </form>
+    </div>
+</body>
+
+</html>

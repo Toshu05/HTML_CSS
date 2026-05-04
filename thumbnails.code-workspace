@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../thumbnails"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html_css_course"
+	}
+}
